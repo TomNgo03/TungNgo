@@ -117,10 +117,21 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-3));
-  color: var(--button-ink);
-  font-weight: 800;
-  letter-spacing: 0;
+  background: var(--ghost-bg);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.brand:hover {
+  transform: translateY(-1px);
+  border-color: var(--line-strong);
+}
+
+.brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .site-nav {
