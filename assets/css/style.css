@@ -98,7 +98,7 @@ img {
   top: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
   width: min(var(--max), calc(100% - 32px));
@@ -141,7 +141,6 @@ img {
 }
 
 .site-nav a,
-.header-cta,
 .theme-toggle {
   color: var(--muted);
   font-size: 14px;
@@ -152,13 +151,11 @@ img {
 }
 
 .site-nav a:hover,
-.header-cta:hover,
 .theme-toggle:hover {
   color: var(--text);
   background: var(--hover-bg);
 }
 
-.header-cta,
 .theme-toggle {
   color: var(--text);
   border: 1px solid var(--line);
@@ -788,12 +785,8 @@ h3 {
     justify-self: end;
   }
 
-  .header-cta {
-    justify-self: end;
-  }
-
   .site-nav a,
-  .header-cta {
+  .theme-toggle {
     white-space: nowrap;
   }
 
