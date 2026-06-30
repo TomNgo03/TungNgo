@@ -1,1096 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TungNgo - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <meta name="description" content="Tung Ngo is a software engineer focused on distributed systems, cloud infrastructure, backend platforms, and AI inference systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tung Ngo | Software Engineer">
+  <meta property="og:description" content="Backend, cloud, distributed systems, and AI infrastructure engineer with production experience at NetApp, UST, and Schneider Electric.">
+  <meta property="og:image" content="https://tomngo03.github.io/TungNgo/assets/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tomngo03.github.io/TungNgo/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tung Ngo | Software Engineer">
+  <meta name="twitter:description" content="I build reliable backend, cloud, platform, and AI infrastructure systems with measurable production impact.">
+  <meta name="twitter:image" content="https://tomngo03.github.io/TungNgo/assets/images/social-preview.png">
+  <title>Tung Ngo | Software Engineer</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tung Ngo home">
+      <span>TN</span>
+    </a>
 
-  <!--
-    - #MAIN
-  -->
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#why-hire">Why Hire</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <main>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true"></span>
+      <span data-theme-label>Light</span>
+    </button>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <a class="header-cta" href="./assets/TungNgo_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+  </header>
 
-    <aside class="sidebar" data-sidebar>
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Engineer - Cloud, backend, distributed systems</p>
+        <h1>I build reliable systems for products that cannot afford to be fragile.</h1>
+        <p class="hero-text">
+          I am Tung Ngo, a Computer Science B.S./M.S. student at UMass Amherst with engineering experience at NetApp, UST, and Schneider Electric. I ship backend platforms, cloud infrastructure, microservices, and AI inference systems with measurable production impact.
+        </p>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/Anh the.jpg" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Tung Ngo</h1>
-
-          <p class="title">Software Developer</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:tungngo@umass.edu">Hire Tung</a>
+          <a class="button secondary" href="#projects">See Work</a>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <p class="availability-line">
+          Seeking 2026/2027 new grad software engineering roles in backend, cloud, platform, and AI infrastructure.
+        </p>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <dl class="hero-metrics" aria-label="Career highlights">
+          <div>
+            <dt>3.9</dt>
+            <dd>UMass GPA</dd>
+          </div>
+          <div>
+            <dt>40%</dt>
+            <dd>Latency and deployment wins</dd>
+          </div>
+          <div>
+            <dt>1M+</dt>
+            <dd>Users supported</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="hero-visual" aria-label="Tung Ngo profile and engineering focus">
+        <div class="portrait-wrap">
+          <img src="./assets/images/Anh the.jpg" alt="Tung Ngo">
+        </div>
+        <div class="system-card card-top">
+          <span>production impact</span>
+          <strong>CI/CD, Kubernetes, REST, gRPC</strong>
+        </div>
+        <div class="system-card card-bottom">
+          <span>current focus</span>
+          <strong>Distributed LLM serving infrastructure</strong>
+        </div>
+      </div>
+    </section>
 
-        <div class="separator"></div>
+    <section class="proof-strip" aria-label="Core strengths">
+      <div>
+        <span>Cloud Platforms</span>
+        <strong>AWS, Azure, Kubernetes, Docker</strong>
+      </div>
+      <div>
+        <span>Backend Systems</span>
+        <strong>Go, Python, TypeScript, FastAPI, Spring Boot</strong>
+      </div>
+      <div>
+        <span>Data and AI</span>
+        <strong>Kafka, PostgreSQL, PyTorch, Snowflake</strong>
+      </div>
+    </section>
 
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:ngoquangtung281203@gmail.com" class="contact-link">tungngo281203@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+14132101368" class="contact-link">+1 (413) 472-7408</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-12-28">Dec 28, 2003</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Amherst, Massachusetts, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=100015693396047" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/tomngo03/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/tom.ngo03/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/TomNgo03" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+    <section id="why-hire" class="section why-hire-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Why Hire Me</p>
+        <h2>I bring the rare mix companies want early: systems depth, product sense, and ownership.</h2>
       </div>
 
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
+      <div class="why-grid">
+        <article class="why-card">
+          <span>01</span>
+          <h3>I ship measurable backend impact.</h3>
           <p>
-            As a senior pursuing a dual degree in Mathematics and Computer Science, I am honored to be a recipient of the Chancellor Award Scholarship.
+            My work has reduced latency, deployment time, and operational risk across real production systems, not just classroom projects.
           </p>
+        </article>
 
+        <article class="why-card">
+          <span>02</span>
+          <h3>I can own the path to production.</h3>
           <p>
-            My academic journey has been complemented by hands-on experience in Backend Development, Cloud Computing, Infrastructure management, and ML. With a passion for solving complex problems and a strong foundation in both theory and practice, I am eager to contribute my skills to innovative projects and dynamic teams.
+            I move comfortably from APIs and databases to Kubernetes, CI/CD, observability, and cloud infrastructure.
           </p>
-        </section>
+        </article>
 
+        <article class="why-card">
+          <span>03</span>
+          <h3>I learn fast and raise the floor around me.</h3>
+          <p>
+            I have supported 200+ students as a course assistant while building in industry teams across NetApp, UST, and Schneider Electric.
+          </p>
+        </article>
+      </div>
+    </section>
 
-        <!--
-          - service
-        -->
+    <section id="experience" class="section split-section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Already trusted with real infrastructure.</h2>
+        <p>
+          My internships have centered on production systems: deployment pipelines, cloud storage workflows, high-volume messaging, microservices, and observability.
+        </p>
+      </div>
 
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+      <div class="timeline">
+        <article class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company">
+              <img src="./assets/images/logo-netapp-linkedin.jpg" alt="NetApp logo">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p>NetApp - San Jose, CA</p>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Algorithms and Data structure</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality algorithms made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Computing</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications with Cloud Service.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                <p class="service-item-text">
-                  Data Preprocessing and Model Training.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/linh1.jfif" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Linh Pham</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I always enjoy every project that I work on with you. Thank you for your invaluable contribution to our team and for always pushing me outside of my comfort zone, encouraging me to be the best version of myself.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/khanh1.jfif" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Khanh Le</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I've really enjoyed the opportunity to get to work closely with you in the past few months. Thank you for pushing me professionally and for making it such a pleasure to be at work each day. I honestly couldn't ask for a better colleague.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/kien1.jfif" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kien To</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I am so grateful to work with you every day. Your continued support and all of the help you provided on our project was invaluable. It truly means so much.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/tri1.jfif" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tri Hoang</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Thank you for always putting in your best effort at work. Your commitment to your job is very appreciated.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/toan1.jfif" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Toan Tran</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I appreciated your teamwork on our most recent projects. I really enjoyed the time I spent working with you.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/thuan1.jfif" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Thuan Nguyen</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    It's truly been great getting to know you better and I look forward to the opportunity to work with you again.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/minh1.jfif" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Minh Le</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I'm always so amazed by how you manage to accomplish everything at the office, especially considering the way your workload has grown over the last year. Great work!
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+            <span>May 2026 - Aug 2026</span>
+          </div>
+          <ul>
+            <li>Improved Azure NetApp Files CI/CD infrastructure through automated validation, regression diagnosis, and release-risk reduction.</li>
+            <li>Resolved distributed storage workflow issues with Python, Kubernetes, PostgreSQL, Azure, Kafka, Docker, and REST APIs.</li>
+            <li>Extended a REST request schema and reduced information-fetch latency by 40%.</li>
+          </ul>
+        </article>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 September, 2022</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+        <article class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company">
+              <img src="./assets/images/logo-ust-linkedin.jpg" alt="UST logo">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p>UST - Aliso Viejo, CA</p>
               </div>
-
             </div>
+            <span>May 2025 - Aug 2025</span>
+          </div>
+          <ul>
+            <li>Automated EC2 provisioning with CloudFormation and Python, reducing deployment time by 40%.</li>
+            <li>Built Go microservices and REST APIs on Kubernetes for distributed, data-intensive workflows.</li>
+            <li>Implemented Prometheus and Grafana observability to improve alerting, instrumentation, and MTTR.</li>
+          </ul>
+        </article>
 
+        <article class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company">
+              <img src="./assets/images/logo-schneider-electric-linkedin.jpg" alt="Schneider Electric logo">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p>Schneider Electric - Boston, MA</p>
+              </div>
+            </div>
+            <span>Jan 2024 - Jun 2024</span>
+          </div>
+          <ul>
+            <li>Developed a Django backend that enabled 100K+ simultaneous bulk messages.</li>
+            <li>Migrated invoice services to TypeScript on AWS, reducing latency by 12% with automated test coverage.</li>
+            <li>Owned a gRPC endpoint for lazy-loading profile dashboard content used by 1M+ users.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company">
+              <img src="./assets/images/logo-umass-linkedin.jpg" alt="UMass Amherst logo">
+              <div>
+                <h3>Undergraduate Course Assistant</h3>
+                <p>UMass CICS - Amherst, MA</p>
+              </div>
+            </div>
+            <span>Jan 2022 - Dec 2023</span>
+          </div>
+          <ul>
+            <li>Hosted weekly office hours for 200+ students learning website and app programming in JavaScript.</li>
+            <li>Guided 40+ students through 9 lab sessions covering task parallelism and synchronization.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Systems work that maps directly to hiring needs.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-meta">
+            <span>AI Infrastructure</span>
+            <span>Jan 2026</span>
+          </div>
+          <h3>AI Inference Research</h3>
+          <p>
+            Built distributed LLM serving infrastructure with Kubernetes and gRPC, supporting scalable low-latency inference across multiple model replicas.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+            <li>Jenkins</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>Cloud Platform</span>
+          </div>
+          <h3>Provisioning Automation</h3>
+          <p>
+            Automated cloud infrastructure provisioning and lifecycle management to reduce manual deployment work and improve operational consistency.
+          </p>
+          <ul class="tag-list">
+            <li>AWS</li>
+            <li>Python</li>
+            <li>Terraform</li>
+            <li>CloudFormation</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>Backend Platform</span>
+          </div>
+          <h3>High-Volume Messaging</h3>
+          <p>
+            Designed backend services for large-scale messaging workflows, including performance work around query execution, partitioning, and reliability.
+          </p>
+          <ul class="tag-list">
+            <li>Django</li>
+            <li>FastAPI</li>
+            <li>Redis</li>
+            <li>AWS</li>
+          </ul>
+        </article>
+      </div>
+
+      <article class="case-study">
+        <div class="case-study-intro">
+          <p class="eyebrow">Case Study</p>
+          <h3>AI Inference Research</h3>
+          <p>
+            A deeper look at the project that best represents the kind of systems work I want to keep doing: infrastructure that makes intelligent products faster, safer, and easier to operate.
+          </p>
+        </div>
+
+        <div class="case-study-grid">
+          <section>
+            <span>Problem</span>
+            <p>
+              LLM inference needs to serve multiple model replicas with low latency, predictable deployment flow, and resilience when workloads or containers fail.
+            </p>
           </section>
 
+          <section>
+            <span>What I Built</span>
+            <p>
+              I built distributed serving infrastructure using Kubernetes, Docker, REST, and gRPC, plus CI/CD workflows for validation, experimentation, and production-style releases.
+            </p>
+          </section>
+
+          <section>
+            <span>Impact</span>
+            <p>
+              The system improved inference throughput and reliability through orchestration, health monitoring, and fault-tolerant recovery mechanisms.
+            </p>
+          </section>
         </div>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Cloud Computing</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Backend Development</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Engineer</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Massachusetts - Amherst</h4>
-
-              <span>Sep. 21 — May 25</span>
-
-              <p class="timeline-text">
-                - Bachelor of Science in Computer Science and Math<br>
-                - Grade: 3.8/4.0 <br>
-                - Dean’s List 21, 22, 23 <br>
-                - Dean’s International Scholar Recipient <br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">HUS High School for Gifted Students</h4>
-
-              <span>Sep. 18 — May 21</span>
-
-              <p class="timeline-text">
-                - Physics Major<br>
-                - Grade: 9.7/10 <br>
-                - Silver Medal at MTE 20 <br>
-                - Gold Medal at WYIE 19 <br>
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">EnergySage</h4>
-
-              <span>Jan. 24 — May 24</span>
-
-              <p class="timeline-text">
-                Software Engineer Intern <br>
-                - The Installer Pod
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UMass Amherst, College of Information and Computer Sciences</h4>
-
-              <span>Sep. 23 — Dec. 23</span>
-
-              <p class="timeline-text">
-                Undergraduate Course Assistant - CS119
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Study4</h4>
-
-              <span>Jun. 23 — Sep. 23</span>
-
-              <p class="timeline-text">
-                Software Engineer Intern <br>
-                - Web Development 
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Nash Tech, Harvey Nash</h4>
-
-              <span>Jun. 22 — Sep. 22</span>
-
-              <p class="timeline-text">
-                Software Engineer Intern <br>
-                - The Rookies Program
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Accomplishments and Activities</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UMass Chancellor's and Dean Scholarships and Awards.</h4>
-
-              <span>Sep 21 — Present</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UMass Machine Learning Club</h4>
-
-              <span>Sep 21 — May 22</span>
-
-              <p class="timeline-text">
-                - Explored about blockchain, data mining, and practical implications and theoretical underpinnings of machine learning.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">The International Inventions and Innovations - Silver Medal</h4>
-
-              <span>Oct 19 - Feb 20 </span>
-
-              <p class="timeline-text">
-                <a href="https://www.vnu.edu.vn/ttsk/?C2422/N25420/Vietnamese-students-win-the-International-Invention-and-Innovation-Award-in-Malaysia.htm">Visit here!</a>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">World Young Inventors Expo - Gold Medal</h4>
-
-              <span>Jan 19 - May 19</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Machine Learning</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Continuous Adaptive Learning Model</h3>
-
-                  <p class="blog-text">
-                    Python, MySQL, SageMaker, ECS, Airflow, and Elasticsearch
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-
-            <li class="blog-post-item">
-              <a href="">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Study PLatfrom</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">StudyHub</h3>
-
-                  <p class="blog-text">
-                    Django, ReactJS, Docker, PostgreSQL, OpenAI API, and AWS Elastic Beanstalk
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/TomNgo03/Gottee-Store/tree/master">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Full Stack - Online Book Shopping Website</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">E-Commerce Website</h3>
-
-                  <p class="blog-text">
-                    MongoDB, ExpressJS, ReactJS,and NodeJS
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/TomNgo03/Blog-BE">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Full Stack - Online Social Platform</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Blog Post</h3>
-
-                  <p class="blog-text">
-                    MongoDB, Spring Boot, and ReactJS
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/TomNgo03/Emotion-Detection-main">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Recognition and Emotion Identifier Program</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Emotion Detection Program</h3>
-
-                  <p class="blog-text">
-                    SQL, Data Preprocessing, Model Training, and NLP
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://tomngo03.github.io/Tower-Block/">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Stress Relieving Game</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Block Tower</h3>
-
-                  <p class="blog-text">
-                    HTML, CSS, and JavaScript
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/TomNgo03/TungNgo-3D-Portfolio">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">3D - Design Portfolio</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">ReactJS 3-D Portfolio</h3>
-
-                  <p class="blog-text">
-                    ThreeJS and JavaScript
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Algorithms and Data Structure</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23"></time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Algo Eliminator</h3>
-
-                  <p class="blog-text">
-                    DSA
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.92426648481!2d-72.53481510321046!3d42.3867598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6d273e4f0f865%3A0xa0d6586089148e05!2zxJDhuqFpIGjhu41jIE1hc3NhY2h1c2V0dHMgQW1oZXJzdA!5e0!3m2!1svi!2sus!4v1669846518101!5m2!1svi!2sus"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Range</p>
+        <h2>A backend engineer with enough range to own the whole path to production.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article>
+          <h3>Languages</h3>
+          <p>Go, Python, TypeScript, JavaScript, C, Java, C++, SQL</p>
+        </article>
+        <article>
+          <h3>Frameworks</h3>
+          <p>Next.js, React, Node.js, Effect, .NET, FastAPI, Spring Boot, REST APIs, gRPC</p>
+        </article>
+        <article>
+          <h3>Cloud and DevOps</h3>
+          <p>Vercel, AWS Lambda, S3, EC2, Azure, PostgreSQL, Docker, Kubernetes, Jenkins, Linux</p>
+        </article>
+        <article>
+          <h3>Engineering Practice</h3>
+          <p>Distributed systems, CI/CD, observability, debugging, microservices, Agile, Git</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="education-card">
+        <p class="eyebrow">Education</p>
+        <h2>University of Massachusetts Amherst</h2>
+        <p>Bachelor and Master of Science in Computer Science - GPA 3.9/4.0 - May 2026</p>
+        <div class="award-list">
+          <span>Chancellor Award Scholarship</span>
+          <span>Dean's List</span>
+          <span>Outstanding Undergraduate Course Assistant Award</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow">Let's Talk</p>
+        <h2>Hiring for backend, cloud, platform, or AI infrastructure?</h2>
+        <p>
+          I am seeking 2026/2027 new grad software engineering roles in backend, cloud, platform, and AI infrastructure. Send me the problem you are trying to solve and I will bring the engineering energy.
+        </p>
+      </div>
+
+      <div class="contact-panel">
+        <a href="mailto:tungngo@umass.edu">tungngo@umass.edu</a>
+        <a href="tel:+14134727408">+1 (413) 472-7408</a>
+        <a href="https://www.linkedin.com/in/tomngo03/" target="_blank" rel="noreferrer">linkedin.com/in/tomngo03</a>
+        <a href="https://github.com/TomNgo03" target="_blank" rel="noreferrer">github.com/TomNgo03</a>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <p>Designed and built for Tung Ngo.</p>
+    <a href="#top">Back to top</a>
+  </footer>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
